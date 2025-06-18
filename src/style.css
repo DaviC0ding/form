@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+body {
+    background: linear-gradient(135deg, #228b22, #6b8e23, #000000);
+}
+
+.nav-bar-container {
+    height: 80px;
+    box-shadow: 0px 0.1px 3px black;
+}
+
+.nav-bar-content {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.davy-logo {
+    position: relative;
+    top: 18px;
+}
+
+.links-group {
+    display: flex;
+    position: relative;
+    gap: 80px;
+    right: 20px;
+    text-decoration: none;
+}
+
+.links-group a {
+    font-weight: bold;
+    font-size: 17px;
+    background-color: whitesmoke;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    transform: scaleX(1);
+}
+
+.links-group a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+    background-color: white;
+}
+
+.links-group a:hover::after {
+    transform: scaleX(1);
+}
+
+.links-group a:active {
+    transform: scale(0.9);
+}
+
+/* LOGIN-FORM, */
+
+.login-form-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form-content {
+    width: 400px;
+    height: 100%;
+    background-color: #333;
+    box-shadow: 10px 10px 50px black;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.login-form-title {
+    justify-items: center;
+    background-color: #444;
+    color: white;
+}
+
+.field-control {
+    margin-top: 20px;
+    position: relative;
+}
+
+.field-control label {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.field-control input {
+    display: block;
+    border: 3px solid #444;
+    border-radius: 10px;
+    padding: 7px;
+    margin: auto auto;
+    width: 90%;
+    background-color: #555;
+}
+
+.field-control input:hover {
+    transform: scale(1.03);
+}
+
+.field-control input:focus {
+    border: 3px solid black;
+    outline: none;
+}
+
+.field-control.success input {
+    border-color: #2ecc71;
+}
+
+.field-control.error input {
+    border-color: #e74c3c;
+}
+
+.field-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 46px;
+    right: 30px;
+}
+
+.field-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.field-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.field-control small {
+    visibility: hidden;
+    margin-left: 20px;
+}
+
+.field-control.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.login-form-submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.login-form-submit-btn button {
+    border-radius: 10px;
+    padding: 13px;
+    background: radial-gradient(#228b22, #6b8e23);
+    border: none;
+    color: white;
+    width: 90%;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login-form-submit-btn button:hover {
+    transform: scale(1.02);
+}
+
+.login-form-submit-btn button:active {
+    transform: scale(0.99);
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>learning more...</title>
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <div class="nav-bar-container">
+      <nav class="nav-bar-content">
+        <div class="davy-logo">
+          <img
+            src="imgs/davy-logo.png"
+            alt="Davy-logo"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="links-group">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- LOGIN-FORM -->
+
+    <div class="login-form-container">
+      <form class="login-form-content" id="form">
+        <header class="login-form-title">
+          <h1>Login</h1>
+        </header>
+
+        <div class="field-control">
+          <label for="userName"> User name </label>
+
+          <input type="text" placeholder="Enter your name..." id="userName" />
+
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+
+          <small> error message </small>
+        </div>
+
+        <div class="field-control">
+          <label for="email"> Email </label>
+
+          <input type="email" placeholder="Enter your email..." id="email" />
+
+          <i class="fas fa-exclamation-circle"></i>.
+          <i class="fas fa-check-circle"></i>
+
+          <small> error  message </small>
+        </div>
+
+        <div class="field-control">
+          <label for="password"> Password </label>
+
+          <input
+            type="password"
+            placeholder="Enter your password..."
+            id="password"
+          />
+
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+
+          <small> error  message </small>
+        </div>
+
+        <div class="field-control">
+          <label for="passwordConfirmation"> Password confirmation </label>
+
+          <input
+            type="password"
+            placeholder="Enter your password again..."
+            id="passwordConfirmation"
+          />
+
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+
+          <small> error  message </small>
+        </div>
+
+        <div class="login-form-submit-btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+     
+  </body>
+</html>
