@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #228b22, #6b8e23, #000000);
+    background: linear-gradient(135deg, #228b22, #6b8e23);
 }
 
 .nav-bar-container {
@@ -165,7 +165,7 @@ body {
 .login-form-submit-btn button {
     border-radius: 10px;
     padding: 13px;
-    background: radial-gradient(#228b22, #6b8e23);
+    background: radial-gradient(black, #228b22, #6b8e23);
     border: none;
     color: white;
     width: 90%;
